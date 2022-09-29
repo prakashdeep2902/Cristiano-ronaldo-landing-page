@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+*
+{
+    font-family: 'open sans',sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin :0;
+    text-decoration: none;
+    list-style-type: none;
+    /* background-color: #ccc; */
+   
+
+}
+body{
+    background-color: #ccc;
+}
+.sidebar
+{
+    width: 40px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #11397e;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+
+}
+header
+{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem,1rem;
+    height: 60px;
+
+}
+.brand
+{
+    display: flex;
+    align-items: center ;
+  
+}
+.brand img{
+    width: 60px;
+    height: 40px;
+    margin-left: 1rem;
+   
+    
+}
+.brand span
+{
+  
+    margin: 0 -.5rem;
+    text-transform: uppercase;
+    font-weight: 1000;
+  
+   
+}
+.nav-menu li
+{
+    display: inline-block;
+   
+    margin: 0rem 1rem;
+}
+.nav-menu a{
+    color: #333;
+    text-transform: uppercase;
+     font-size: .9rem;
+     font-weight: 700;
+  
+}  
+.user img{
+    margin-top: .5rem;
+    border-radius: 40%;
+    margin-right: 2rem;
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.8);
+
+}
+.main
+{
+  /* border: 2px solid red; */
+    margin-left: 45px;
+    min-height: 100vh;
+    background-color: #ccc;
+}
+.content-1,.content-2
+{
+    padding: 1rem 2rem;
+    /* border: 2px solid red; */
+     
+} 
+.content-1
+{
+    min-height: 40vh;
+    background: #dfe2e5;
+    display: grid;
+    grid-template-columns: 30% 40% 30%
+    
+}
+.text-center
+{
+    display: flex;
+    justify-content: center;
+}
+.mid-content
+{
+    position: relative;
+}
+.mid-content::after
+{
+    content:" ";
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 50;
+    left: 46%;
+    top: 100px;
+    transform: translateX(-50%);
+} 
+.ronaldo
+{   
+    position: absolute;
+    width: 70%;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+
+}
+.circle-bg
+{
+  
+    background-color: #ccc;
+    padding: .3rem;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0.5rem;
+
+}
+.fav
+{
+    /* border: 2px solid teal; */
+  
+    display: flex;
+}
+.fav .spa
+{
+    margin-top: .6rem;
+    width: inherit;
+    height: 25px;
+    justify-items: end;
+    /* border: 2px solid teal; */
+}
+
+.character h1
+{
+   
+    font-size: 3.3rem;
+    margin: 2rem 0rem;
+    line-height: 3rem;
+ 
+
+}
+.team
+{
+   
+    display: flex;
+    align-items: center;
+
+}
+.team img{
+   
+    margin: 0 .5rem;
+    width: 50px;
+    height: 50px;
+}
+.features
+{ 
+    display: flex;
+    margin :1rem;
+    margin-bottom: 1rem;
+}
+.feature:first-child
+{
+   
+    margin-right: 5rem;
+}
+.feature p
+{
+   
+    font-weight: 800;
+}
+.feature h2{
+    font-size: 1.9rem;
+}
+.side-content
+{
+  
+   padding-left: 0rem;
+}
+.side-content:last-child
+{
+  
+    padding-left: 4.5rem;
+}
+.side-content h3{
+   
+    font-size: 1rem;
+
+}
+.title
+{
+    text-align: center;
+}
+.game-card
+{
+   
+    background: #fff;
+    border-radius: 7px;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+.game-teams
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+.text-center-date
+{
+  
+    display: flex;
+    font-size: .8rem;
+    font-weight: 700;
+    justify-content:center ;
+  
+   
+   
+}
+.text-center-date span:last-child
+{
+    margin: 0 0 0 .5rem
+}
+.game-team img:first-child
+{ 
+    display: flex;
+    
+}
+
+.game-team span
+{
+    display: flex;
+    margin-top: .5rem;
+    align-items: center;
+    justify-content: center;
+}
+   
+.highlights
+{
+    display: grid;
+    grid-template-columns: 60% 60%;
+    margin-top: 1.3rem;
+    overflow-x: hidden;
+    grid-gap: 0 1rem;
+}
+   
+.h-card
+{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 150px;
+    border-radius: 7px;
+   
+}
+
+.h-card-over
+{
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+  
+}
+.h-card-content
+{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.h-card-bottom
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+  
+    padding: .5rem;
+  
+}
+.h-card-control
+{
+   
+    display: flex;
+    z-index: -1;
+}
+.h-card-title p{
+    border-top: 1px solid #fff;
+    font-size: .6rem
+   
+}
+.content-2
+{
+    background-color: #d0d3d9;
+    padding: 1rem 2rem;
+    min-height: 38vh;
+}
+.flex-grid
+{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid blue; */
+    margin-top: 2rem;
+}
+.flex
+{
+    /* border: 2px solid rgb(211, 11, 144); */
+    width: 30%;
+    
+   
+}
+table{
+    border-collapse: collapse;
+    width: 70%;
+    /* border: 2px solid rgb(4, 238, 168); */
+    margin-bottom: 2rem;
+  
+}
+tr
+{
+    padding: 1rem .1rem;
+    border-bottom: 2px solid #505050
+    
+}
+th{
+  
+    text-transform: uppercase;
+    font-size: .8rem;
+    text-align: left;
+}
+
+td{
+    padding: .5rem;
+ }
+ .points
+ {
+     /* place-items: center; */
+    position: relative;
+   width: 45%;
+   left: 50%;
+   bottom: 1rem;
+   transform: translateX(-60%);
+     display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-gap: 0rem 3rem;
+   z-index: 150;
+    color: #fff;
+  
+ }
+ .points-card
+ {
+     border-radius: 7px;
+    text-align: center;
+    color: #fff;
+ }
+ .points-title
+ {   place-items: center;
+     justify-content: center;
+     /* border: 2px solid rgb(27, 177, 102); */
+     text-transform: uppercase;
+     font-size: .8rem;
+     font-weight: 700;
+     padding:.5rem 0rem;
+     border-bottom: 1px solid #fff;
+
+ }
+ .points-title p
+ {
+    /* margin-left: 1rem; */
+ }
+ .point-body
+ {
+    /* border: 2px solid rgb(248, 61, 4);  */
+     display: flex;
+     justify-content: center;
+     padding:  1.2rem 1rem;  
+     align-items: center;
+
+     
+ }
+ .point-body h2{
+     font-size: 2rem;
+     /* border: 2px solid rgb(99, 23, 240);  */
+ }
+ .point-body h2 span{
+     font-size: .8rem;
+     /* border: 2px solid rgb(64, 253, 1);  */
+ }
+ 
+ .points-card:first-child,
+ .points-card:last-child
+ {
+     background: #144187;
+ }
+ .points-card:nth-child(2)
+ {
+     background: #071629;
+ }
+
